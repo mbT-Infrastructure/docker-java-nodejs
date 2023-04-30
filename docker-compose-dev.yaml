@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+
+    docker-java-npm:
+        container_name: docker-java-npm
+        build: .
+        command: >
+            bash -c 'echo "java version $(java --version),
+            node.js version $(node --version),
+            npm version $(npm --version)"'
