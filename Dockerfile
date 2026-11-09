@@ -1,4 +1,4 @@
-FROM madebytimo/java
+FROM docker.io/madebytimo/java
 
-RUN install-autonomous.sh install Basics NodeJs && \
+RUN install-autonomous.sh install NodeJs && \
     rm -rf /var/lib/apt/lists/*
